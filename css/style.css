@@ -1,1 +1,39 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+ #keypad{
+  height: 400px;
+  width: 300px;
+  display: flex;
+  border: 5px solid black;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto 50px;
+}
+
+.button, .oper, .clear , .equals{
+
+  height: 50px;
+  width: 30%;
+  margin: 5px;
+  background-color: pink;
+  color: black;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.oper {
+  background: lightblue;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#display {
+  margin: 0 50px;
+  margin-bottom: 10px;
+  width: 305px;
+  height: 40px;
+  border: 3px solid red;
+  text-align: right;
+
+}

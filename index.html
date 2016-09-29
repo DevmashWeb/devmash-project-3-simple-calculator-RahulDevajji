@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
     <title>
-        Your Title here
+        Calculator
     </title>
     <meta content="" name="description">
     <meta content="" name="author">
@@ -15,8 +15,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport" />
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/skeleton.css" rel="stylesheet">
+
     <link href="css/style.css" rel="stylesheet">
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -24,12 +23,35 @@
 </head>
 
 <body>
-    <!-- Content
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+  <form name="case">
 
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <input name="display" id="display" value="">
+
+    <div id="keypad">
+
+    <input type="button" class="button" value="1" onclick="show1()">
+    <input type="button" class="button" value="2" onclick="show2()">
+    <input type="button" class="button" value="3" onclick="show3()">
+    <input type="button" class="button" value="4" onclick="show4()">
+    <input type="button" class="button" value="5" onclick="show5()">
+    <input type="button" class="button" value="6" onclick="show6()">
+    <input type="button" class="button" value="7" onclick="show7()">
+    <input type="button" class="button" value="8" onclick="show8()">
+    <input type="button" class="button" value="9" onclick="show9()">
+    <input type="button" id="divide" class="oper" value="/" onclick="div()">
+    <input type="button" class="button" value="0" onclick="show0()">
+    <input type="button" id="minus" class="oper" value="-" onclick="sub()">
+    <input type="button" id="plus" class="oper" value="+" onclick="add()">
+    <input type="button" id="multiply" class="oper" value="*" onclick="mul()">
+    <input type="button" class="oper" value="%" onclick="percent()">
+    <input type="button" id="equal" class="oper" value="=" onclick="solve()">
+    <input type="button" class="clear" value="C" style="background: green" onclick="clearD()">
+    </div>
+  
+  <script src="script.js"></script>
+
+</form>
 </body>
 
 </html>
