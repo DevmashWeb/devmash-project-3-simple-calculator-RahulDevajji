@@ -64,8 +64,6 @@ function clearD(){
 
 	document.case.display.value = ""
 };
-
-
 function solve(){
 	var equal = eval(document.case.display.value)
 	document.case.display.value = equal;
